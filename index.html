@@ -1,82 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-  </html>
+<html>
   <head>
-    <meta charset="utf-8">
-    <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="Login/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Illuceed</title>
+    <link href="comingsoon.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dosis"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="topnav">
-      <ul>
-        <li>
-            <a href="#" class="active">
-                <i class="fas fa-home icon"></i>
-            </a>
-        </li>
-        <li><a href="#">
-                <i class="fas fa-rss icon"></i>
-            </a>
-        </li>
-        <li><a href="#">
-                <i class="fas fa-address-book icon"></i>
-            </a>
-        </li>
-        <li><a href="#"><i class="fas fa-info icon"></i>
-            </a>
-        </li>
-    </ul>
-    </div>
-    <div class="loginbox">
-      <img src="Login/images/137587391_941086049756384_9214366392732618952_n.jpg" class="avatar" />
-      <h1>Login Here</h1>
-      <forms>
-        <p>Username</p>
-        <input type="text" name="" placeholder="Email or Username" />
-        <p>Password</p>
-        <input type="password" class="pass-key" placeholder="Enter Password"/>
-        <!--span id="show">SHOW</span-->
-        <div>
-        <input type="submit" value="Login"/>
-        <a href="page2.html">Forgot your password?</a><br /></div>
-        
-
-      </forms>
-      <div class="login">
-        Or login with
+    <header>
+      <div class="hero">
+        <p>Something Awesome is Under Construction!</p>
+        <h1>Coming Soon</h1>
+        <hr />
+        <p id="launch"></p>
       </div>
-      <div class="links">
-        <div class="facebook">
-           <i id="icons" class="fab fa-facebook-f"></i>
-           <span>Facebook</span>
-        </div>
-        <div class="google">
-           <i id="icons" class="fab fa-google"></i>
-           <span>Google</span>
-        </div>
-    </div>
-    <div class="signup">
-      Don't have account? <a href="#">Signup Now</a>
-   </div>
-   <script>
-    const pass_field = document.querySelector('.pass-key');
-    const showBtn = document.querySelector('#show');
-    showBtn.addEventListener('click', function(){
-     if(pass_field.type = "password") {
-       pass_field.type = "text";
-       showBtn.textContent = "HIDE";
-       showBtn.style.color = "#3498db";
-     }
-     else {
-       pass_field.type = "password";
-       showBtn.textContent = "SHOW";
-       showBtn.style.color = "#222";
-     }
-    });
- </script>
-
- <!--Section 2 Start here - Hilton-->
-
+    </header>
   </body>
+  <script>
+    var countDownDate = new Date("August 19, 2025 00:00:00").getTime();
+    var x = setInterval(function () {
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("launch").innerHTML =
+        days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("launch").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+  </script>
 </html>
