@@ -1,5 +1,9 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Illuceed</title>
     <link href="comingsoon.css" rel="stylesheet" type="text/css" />
     <link
@@ -7,19 +11,22 @@
       rel="stylesheet"
     />
      <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
-  </head>
-  <body>
-    <header>
-      <div class="hero">
-        <p>Something Awesome is Under Construction!</p>
-        <h1>Coming Soon</h1>
-        <hr />
-        <p id="launch"></p>
-      </div>
-    </header>
-  </body>
-  <script>
-    var countDownDate = new Date("August 19, 2025 00:00:00").getTime();
+</head>
+<body>
+<header>
+<video id="background-video" autoplay loop muted poster="images/ss.png">
+    <source src="images/lala.mp4" type="video/mp4">
+  </video>
+  <div class="hero">
+    <p>Something Awesome is Under Construction!</p>
+    <h1>Coming Soon</h1>
+    <hr />
+    <p id="launch"></p>
+  </div>
+</header>
+</body>
+<script>
+var countDownDate = new Date("August 19, 2025 00:00:00").getTime();
     var x = setInterval(function () {
       var now = new Date().getTime();
       var distance = countDownDate - now;
@@ -39,5 +46,5 @@
         document.getElementById("launch").innerHTML = "EXPIRED";
       }
     }, 1000);
-  </script>
+</script>
 </html>
