@@ -66,5 +66,6 @@ p {
   }
   #launch{
     font-size: 30px;
+    word-spacing: 10px;
   }
 }
