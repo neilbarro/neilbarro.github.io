@@ -2,12 +2,6 @@
   margin: 0;
   padding: 0;
 }
-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7));
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
-}
 
 .hero {
   top: 50%;
@@ -25,6 +19,15 @@ header {
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
+
+/*{
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}*/
 
 h1 {
   font-size: 60px;
@@ -55,4 +58,10 @@ p {
   top: 0;
   bottom: 0;
   z-index: -1;
+}
+
+@media screen and (max-width: 800px) {
+  .hero {
+    width: 80%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
 }
