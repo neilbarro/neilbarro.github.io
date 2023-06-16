@@ -157,8 +157,8 @@ a:focus {
 }
 
 section {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 0px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
@@ -499,8 +499,7 @@ section {
 }
 
 /*---------------------------------------
-      
-             
+      BLOG             
   -----------------------------------------*/
 
 #blog {
@@ -656,16 +655,16 @@ section {
   -----------------------------------------*/
 
 #contact {
-  background: #00f260; /* fallback for old browsers */
+  background: #00000; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #0575e6,
-    #00f260
+    white,
+    #white
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #0575e6,
-    #00f260
+    #00000,
+    #00000
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 

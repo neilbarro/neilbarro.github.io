@@ -499,8 +499,7 @@ section {
 }
 
 /*---------------------------------------
-      
-             
+      BLOG             
   -----------------------------------------*/
 
 #blog {
@@ -563,16 +562,16 @@ section {
   margin-bottom: 0px;
 }
 
-#blog-detail h2 {
-  padding: 25px 0 10px 0;
+#blog-detail h1 h2 {
+  padding: 0px 0 10px 0;
 }
 
 .blog-info {
-  padding: 75px 25px;
+  padding: 5px 25px;
 }
 
-.blog-info h3 {
-  margin: 0;
+.blog-info h1 h3 {
+  margin: 0px;
   padding: 8px 0 6px 0;
   text-transform: capitalize;
 }
