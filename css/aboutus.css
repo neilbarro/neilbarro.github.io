@@ -513,7 +513,8 @@ section {
 
 #blog-header {
   background: url("../images/bcnshs4.jpg") no-repeat center center;
-  background-size: cover;
+  background-size: 100%;
+background-attachment: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -522,7 +523,7 @@ section {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 65vh;
+  height: 60vh;
   color: #ffffff;
   position: relative;
   padding-top: 12em;
