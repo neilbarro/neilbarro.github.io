@@ -513,8 +513,7 @@ section {
 
 #blog-header {
   background: url("../images/bcnshs4.jpg") no-repeat center center;
-  background-size: 100%;
-background-attachment: inherit;
+  background-size: cover;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
